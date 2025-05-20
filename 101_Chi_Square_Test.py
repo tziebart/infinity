@@ -26,9 +26,9 @@ print(critical_value)
 if chi2_statistic >= critical_value:
     print(f"As our chi-square statistic of {chi2_statistic} is higher than our critical value of {critical_value} - we reject the null hyposthesis, and conclude that: {alternate_hypothesis}")
 else:
-    print(f"As our chi-square statistic of {chi2_statistic} is lower than our critical value of {critical_value} - we reject the null hyposthesis, and conclude that: {null_hypothesis}")
+    print(f"As our chi-square statistic of {chi2_statistic} is lower than our critical value of {critical_value} - we retain the null hyposthesis, and conclude that: {null_hypothesis}")
 
 if p_value <= acceptance_criteria:
-    print(f"As our p_value statistic of {p_value} is lower than our acceptance criteria of {acceptance_criteria} - we reject the null hyposthesis, and conclude that: {alternate_hypothesis}")
+    print(f"As our p_value statistic of {p_value} is lower than our acceptance criteria of {acceptance_criteria} - we retain the null hyposthesis, and conclude that: {alternate_hypothesis}")
 else:
-    print(f"As our p_value statistic of {p_value} is higher than our acceptance criteria of {acceptance_criteria} - we reject the null hyposthesis, and conclude that: {null_hypothesis}")
+    print(f"As our p_value statistic of {p_value} is higher than our acceptance criteria of {acceptance_criteria} - we retain the null hyposthesis, and conclude that: {null_hypothesis}")
